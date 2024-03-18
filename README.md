@@ -41,7 +41,7 @@ git clone -b android-11 https://github.com/ItsPi3141/orangefox_device_samsung_y2
 ```bash
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
-export FOX_BUILD_DEVICE=<device>
+export FOX_BUILD_DEVICE=y2s
 export LC_ALL="C"
 ```
 
