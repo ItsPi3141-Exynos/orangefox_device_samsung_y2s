@@ -80,7 +80,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 		# R11
 		export FOX_R11=1
-		export FOX_BUILD_TYPE=Beta
+		export FOX_BUILD_TYPE=Unofficial
 
 		# maximum permissible splash image size (in kilobytes); do *NOT* increase!
 		export OF_SPLASH_MAX_SIZE=104
@@ -90,7 +90,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 		# Custom pic for maintainer's about section info
 		export OF_MAINTAINER_AVATAR="$PWD/device/samsung/y2s/maintainer.png"
-        export OF_MAINTAINER="ItsPi3141 (Unofficial)"
+        export OF_MAINTAINER="ItsPi3141"
 
 		# let's see what are our build VARs
 		if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
