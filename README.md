@@ -1,7 +1,5 @@
 # TWRP device tree for Samsung S20+ aka y2s
 
-**This is a WIP**
-
 ## Kernel source
 
 Available at <https://github.com/corsicanu/android_kernel_samsung_universal9830>
