@@ -1,17 +1,52 @@
 # TWRP device tree for Samsung S20+ aka y2s
 
-## Kernel source 
-Available at https://github.com/corsicanu/android_kernel_samsung_universal9830
+**This is a WIP**
+
+## Kernel source
+
+Available at <https://github.com/corsicanu/android_kernel_samsung_universal9830>
 
 ## How to build
-This was tested and it's fully compatible with [minimal manifest twrp](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp).
-1. Set up the build environment following instructions from [here](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp/blob/twrp-11/README.md#getting-started)
-2. In the root folder of cloned repo you need to clone the device tree:
+
+### Prepare build environment
+
 ```bash
-git clone -b android-11.0 https://github.com/TeamWin/android_device_samsung_y2s.git device/samsung/y2s
-```
-3. To build:
-```bash
-export ALLOW_MISSING_DEPENDENCIES=true && . build/envsetup.sh && lunch twrp_y2s-eng && mka recoveryimage -j128
+cd ~
+sudo apt install git aria2 -y
+git clone https://gitlab.com/OrangeFox/misc/scripts
+cd scripts
+sudo bash setup/android_build_env.sh
+sudo bash setup/install_android_sdk.sh
 ```
 
+### Clone OrangeFox
+
+```bash
+mkdir ~/OrangeFox_sync
+cd ~/OrangeFox_sync
+git clone https://gitlab.com/OrangeFox/sync.git
+cd ~/OrangeFox_sync/sync/
+./orangefox_sync.sh --branch 11.0 --path ~/fox_11.0
+```
+
+### Clone y2s device tree
+
+```bash
+cd ~/fox_12.1
+git clone -b android-11 https://github.com/ItsPi3141/orangefox_device_samsung_y2s.git device/samsung/y2s
+```
+
+### Setup environment variables
+
+```bash
+source build/envsetup.sh
+export ALLOW_MISSING_DEPENDENCIES=true
+export FOX_BUILD_DEVICE=<device>
+export LC_ALL="C"
+```
+
+### Build
+
+```bash
+lunch twrp_y2s-eng && mka recoveryimage
+```
