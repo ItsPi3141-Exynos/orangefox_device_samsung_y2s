@@ -48,5 +48,5 @@ export LC_ALL="C"
 ### Build
 
 ```bash
-lunch twrp_y2s-eng && mka recoveryimage
+lunch twrp_y2s-eng && mka adbd recoveryimage
 ```
