@@ -32,7 +32,7 @@ cd ~/OrangeFox_sync/sync/
 ### Clone y2s device tree
 
 ```bash
-cd ~/fox_12.1
+cd ~/fox_11.0
 git clone -b android-11 https://github.com/ItsPi3141/orangefox_device_samsung_y2s.git device/samsung/y2s
 ```
 
