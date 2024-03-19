@@ -24,14 +24,14 @@ mkdir ~/OrangeFox_sync
 cd ~/OrangeFox_sync
 git clone https://gitlab.com/OrangeFox/sync.git
 cd ~/OrangeFox_sync/sync/
-./orangefox_sync.sh --branch 11.0 --path ~/fox_11.0
+./orangefox_sync.sh --branch 12.1 --path ~/fox_12.1
 ```
 
 ### Clone y2s device tree
 
 ```bash
-cd ~/fox_11.0
-git clone -b android-11 https://github.com/ItsPi3141/orangefox_device_samsung_y2s.git device/samsung/y2s
+cd ~/fox_12.1
+git clone -b orangefox-12.1 https://github.com/ItsPi3141/orangefox_device_samsung_y2s.git device/samsung/y2s
 ```
 
 ### Setup environment variables
