@@ -38,8 +38,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export ALLOW_MISSING_DEPENDENCIES=true
 		export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 		export LC_ALL="C"
-		export OF_VANILLA_BUILD=1
-		export OF_NO_SAMSUNG_SPECIAL=0
+		export FOX_VANILLA_BUILD=1
+		export FOX_NO_SAMSUNG_SPECIAL=0
 		export FOX_DYNAMIC_SAMSUNG_FIX=1
 		# export FOX_REMOVE_AAPT=1
 		# export FOX_REMOVE_BASH=1
@@ -54,13 +54,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 		# export FOX_RESET_SETTINGS=0
 		# export FOX_DELETE_AROMAFM=1
-		export FOX_VERSION="R11.1"
+		export FOX_VERSION="R12.1_0"
 		export OF_SCREEN_H="2400"
 		export OF_HIDE_NOTCH=1
 		export OF_CLOCK_POS=1
 		export OF_ALLOW_DISABLE_NAVBAR=0
 		export TARGET_DEVICE_ALT="y2s, y2slte, y2sxxx"
-		export OF_TARGET_DEVICES="y2s, y2slte, y2sxxx"
+		export FOX_TARGET_DEVICES="y2s, y2slte, y2sxxx"
 		export OF_USE_SYSTEM_FINGERPRINT=1
 		export OF_USE_TWRP_SAR_DETECT=1
 		export OF_QUICK_BACKUP_LIST="/super;/boot;/vbmeta;/vbmeta_samsung;/dtbo;"
@@ -80,7 +80,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export OF_FLASHLIGHT_ENABLE=1
 
 		# R11
-		export FOX_R11=1
+		# export FOX_R11=1
 		export FOX_BUILD_TYPE=Unofficial
 
 		# maximum permissible splash image size (in kilobytes); do *NOT* increase!
