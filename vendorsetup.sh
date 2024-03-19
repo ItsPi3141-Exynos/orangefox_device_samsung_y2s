@@ -54,7 +54,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 		# export FOX_RESET_SETTINGS=0
 		# export FOX_DELETE_AROMAFM=1
-		export FOX_VERSION="R11.0"
+		export FOX_VERSION="R11.1"
 		export OF_SCREEN_H="2400"
 		export OF_HIDE_NOTCH=1
 		export OF_CLOCK_POS=1
