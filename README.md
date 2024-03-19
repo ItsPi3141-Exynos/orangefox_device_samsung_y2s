@@ -1,10 +1,10 @@
-# TWRP device tree for Samsung S20+ aka y2s
+# OrangeFox device tree for Samsung S20+ (y2s)
 
-## Kernel source
+## ⚙️ Kernel source
 
 Available at <https://github.com/corsicanu/android_kernel_samsung_universal9830>
 
-## How to build
+## 🛠️  How to build
 
 ### Prepare build environment
 
@@ -49,3 +49,26 @@ export LC_ALL="C"
 . device/samsung/y2s/vendorsetup.sh
 lunch twrp_y2s-eng && mka adbd recoveryimage
 ```
+
+> [!NOTE]
+> Sometimes, you will need to clean the build tree so that certain files can be regenerated.
+>
+> ```bash
+> mka clean
+> ```
+
+## 🎉 Credits
+
+### This device tree was adapted from the following repositories
+
+- Original TWRP device tree: <https://github.com/TeamWin/android_device_samsung_y2s/tree/android-11>
+- vendorsetup.sh: <https://gitlab.com/OrangeFox/device/a51nsxx>
+- OrangeFox configuration: <https://gitlab.com/OrangeFox/vendor/recovery/-/blob/master/orangefox_build_vars.txt>
+- Flashlight fix: <https://gitlab.com/OrangeFox/device/a72q>
+- Additional reference: <https://github.com/PitchBlackRecoveryProject/android_device_samsung_z3s-pbrp/>
+
+### Thanks to these people for their amazing work
+
+- [Razvan (Corsicanu)](https://github.com/corsicanu)
+- [Nico170420](https://github.com/Nico170420)
+- [Yillié](https://gitlab.com/Yillie)
