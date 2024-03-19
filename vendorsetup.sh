@@ -73,11 +73,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export OF_USE_GREEN_LED=0
 		export OF_SUPPORT_PRE_FLASH_SCRIPT=1
 
-        # FLASHLIGHT DOESNT WORK
-        # Disabled for now
-        export OF_FL_PATH1="/sys/devices/virtual/camera/flash/rear_flash"
+        # Flashlight
+        # See /init.recovery.exynos990.rc for details
+        export OF_FL_PATH1="/tmp/flashlight"
 		export OF_FL_PATH2=""
-		export OF_FLASHLIGHT_ENABLE=0
+		export OF_FLASHLIGHT_ENABLE=1
 
 		# R11
 		export FOX_R11=1
