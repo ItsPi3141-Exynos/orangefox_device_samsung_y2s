@@ -31,7 +31,7 @@ cd ~/OrangeFox_sync/sync/
 
 ```bash
 cd ~/fox_12.1
-git clone -b orangefox-12.1 https://github.com/ItsPi3141/orangefox_device_samsung_y2s.git device/samsung/y2s
+git clone -b orangefox-12.1 https://github.com/ItsPi3141-Exynos/orangefox_device_samsung_y2s.git device/samsung/y2s
 ```
 
 ### Setup environment variables
